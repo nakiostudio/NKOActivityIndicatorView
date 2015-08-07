@@ -4,144 +4,9 @@
 //
 
 #import "LYActivityIndicatorView.h"
+#import "LYActivityIndicatorLayer.h"
 
-CGFloat const kSegmentLapse     = 0.125f;
 CGFloat const kDefaultLineWidth = 10.f;
-
-@interface LYActivityIndicatorLayer : CALayer
-
-@property (nonatomic, assign) CGFloat step;
-
-@property (nonatomic, strong) UIColor *color;
-@property (nonatomic, assign) CGFloat lineWidth;
-
-@end
-
-@implementation LYActivityIndicatorLayer
-
-- (instancetype)init {
-    self = [super init];
-    
-    if (self != nil) {
-        self->_color = [UIColor blackColor];
-        self->_lineWidth = kDefaultLineWidth;
-        self.needsDisplayOnBoundsChange = YES;
-    }
-    
-    return self;
-}
-
-- (instancetype)initWithLayer:(id)layer {
-    self = [super initWithLayer:layer];
-    
-    if (self != nil) {
-        LYActivityIndicatorLayer *sourceLayer = layer;
-        self->_color = sourceLayer.color;
-        self->_lineWidth = sourceLayer.lineWidth;
-        self.backgroundColor = sourceLayer.backgroundColor;
-        self.needsDisplayOnBoundsChange = YES;
-    }
-    
-    return self;
-}
-
-- (void)drawInContext:(CGContextRef)ctx {
-    [super drawInContext:ctx];
-    
-    [self _drawSpinInContext:ctx withStep:self.step];
-}
-
-- (void)_drawSpinInContext:(CGContextRef)ctx withStep:(CGFloat)step {
-    static NSUInteger segments = 8;
-    
-    for (int segment = 0; segment <= segments; segment++) {
-        if (step >= kSegmentLapse*segment) {
-            CGPoint pointA = [self _pointAforSegment:segment step:step];
-            CGPoint pointB = [self _pointBforSegment:segment step:step];
-            [self _drawLineInContext:ctx from:pointA to:pointB];
-        }
-    }
-    
-}
-
-- (CGPoint)_pointAforSegment:(NSUInteger)segment step:(CGFloat)step {
-    switch (segment) {
-        case 0:
-            return CGPointMake(0.f, 0.f);
-        case 1:
-            return CGPointMake(CGRectGetWidth(self.bounds), 0.f);
-        case 2:
-            return CGPointMake(CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds));
-        case 3:
-            return CGPointMake(0.f, CGRectGetHeight(self.bounds));
-        case 4:
-            return CGPointZero;
-        case 5:
-            return CGPointZero;
-        case 6:
-            return CGPointZero;
-        case 7:
-            return CGPointZero;
-        default:
-            return CGPointZero;
-    }
-}
-
-- (CGPoint)_pointBforSegment:(NSUInteger)segment step:(CGFloat)step {
-    CGFloat pos = step < (kSegmentLapse*(segment+1)) ? (step - kSegmentLapse*(segment))/kSegmentLapse : 1.f;
-    CGFloat width = CGRectGetWidth(self.bounds);
-    CGFloat height = CGRectGetWidth(self.bounds);
-    
-    switch (segment) {
-        case 0:
-            return CGPointMake(width*pos, 0.f);
-        case 1:
-            return CGPointMake(width, height*pos);
-        case 2:
-            return CGPointMake(width-(width*pos), height);
-        case 3:
-            return CGPointMake(0.f, height-(height*pos));
-        case 4:
-            return CGPointZero;
-        case 5:
-            return CGPointZero;
-        case 6:
-            return CGPointZero;
-        case 7:
-            return CGPointZero;
-        default:
-            return CGPointZero;
-    }
-}
-
-- (void)_drawLineInContext:(CGContextRef)ctx from:(CGPoint)pointA to:(CGPoint)pointB {
-    CGContextSaveGState(ctx);
-    CGContextSetFillColorWithColor(ctx, [UIColor blackColor].CGColor);
-    CGContextSetLineWidth(ctx, self.lineWidth);
-    CGContextMoveToPoint(ctx, pointA.x, pointA.y);
-    CGContextAddLineToPoint(ctx, pointB.x, pointB.y);
-    CGContextStrokePath(ctx);
-    CGContextRestoreGState(ctx);
-}
-
-+ (BOOL)needsDisplayForKey:(NSString *)key {
-    if ([key isEqualToString:@"step"]){
-        return YES;
-    }
-    
-    return [super needsDisplayForKey:key];
-}
-
-- (id<CAAction>)actionForKey:(NSString *)event {
-    if ([event isEqualToString:@"step"]){
-        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:event];
-        return animation;
-    }
-    
-    return [super actionForKey:event];
-}
-
-@end
 
 @interface LYActivityIndicatorView ()
 
@@ -183,6 +48,8 @@ CGFloat const kDefaultLineWidth = 10.f;
     self.animatedLayer.frame = CGRectMake(0.f, 0.f, CGRectGetWidth(frame), CGRectGetHeight(frame));
 }
 
+#pragma mark - Public methods
+
 - (void)startAnimating {
     [self stopAnimating];
     
@@ -219,7 +86,7 @@ CGFloat const kDefaultLineWidth = 10.f;
         
         if (self->_animatedLayer == nil) {
             self->_animatedLayer = [[LYActivityIndicatorLayer alloc] init];
-            self->_animatedLayer.color = self.color;
+            self->_animatedLayer.color = self.color.CGColor;
             self->_animatedLayer.lineWidth = self.lineWidth;
             self->_animatedLayer.backgroundColor = [UIColor clearColor].CGColor;
         }

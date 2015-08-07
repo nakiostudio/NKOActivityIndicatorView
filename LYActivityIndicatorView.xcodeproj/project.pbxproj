@@ -15,6 +15,7 @@
 		C161DDAB1B73FC9B00693645 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C161DDA91B73FC9B00693645 /* LaunchScreen.xib */; };
 		C161DDB71B73FC9B00693645 /* LYActivityIndicatorViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDB61B73FC9B00693645 /* LYActivityIndicatorViewTests.m */; };
 		C161DDC21B73FCC000693645 /* LYActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDC11B73FCC000693645 /* LYActivityIndicatorView.m */; };
+		C161DDC51B7561F100693645 /* LYActivityIndicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDC41B7561F100693645 /* LYActivityIndicatorLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		C161DDB61B73FC9B00693645 /* LYActivityIndicatorViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYActivityIndicatorViewTests.m; sourceTree = "<group>"; };
 		C161DDC01B73FCC000693645 /* LYActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYActivityIndicatorView.h; sourceTree = "<group>"; };
 		C161DDC11B73FCC000693645 /* LYActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYActivityIndicatorView.m; sourceTree = "<group>"; };
+		C161DDC31B7561F100693645 /* LYActivityIndicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYActivityIndicatorLayer.h; sourceTree = "<group>"; };
+		C161DDC41B7561F100693645 /* LYActivityIndicatorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYActivityIndicatorLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 		C161DD991B73FC9B00693645 /* LYActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
+				C161DDC31B7561F100693645 /* LYActivityIndicatorLayer.h */,
+				C161DDC41B7561F100693645 /* LYActivityIndicatorLayer.m */,
 				C161DDC01B73FCC000693645 /* LYActivityIndicatorView.h */,
 				C161DDC11B73FCC000693645 /* LYActivityIndicatorView.m */,
 				C161DD9E1B73FC9B00693645 /* AppDelegate.h */,
@@ -227,6 +232,7 @@
 				C161DDA31B73FC9B00693645 /* ViewController.m in Sources */,
 				C161DDA01B73FC9B00693645 /* AppDelegate.m in Sources */,
 				C161DDC21B73FCC000693645 /* LYActivityIndicatorView.m in Sources */,
+				C161DDC51B7561F100693645 /* LYActivityIndicatorLayer.m in Sources */,
 				C161DD9D1B73FC9B00693645 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
