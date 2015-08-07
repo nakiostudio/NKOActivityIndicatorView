@@ -22,7 +22,6 @@ CGFloat const kSegmentLapse     = 0.125f;
     self = [super init];
     
     if (self != nil) {
-        self->_color = [UIColor blackColor].CGColor;
         self.needsDisplayOnBoundsChange = YES;
     }
     
@@ -123,7 +122,7 @@ CGFloat const kSegmentLapse     = 0.125f;
 
 - (void)_drawLineInContext:(CGContextRef)ctx from:(CGPoint)pointA to:(CGPoint)pointB {
     CGContextSaveGState(ctx);
-    CGContextSetFillColorWithColor(ctx, self.color);
+    CGContextSetStrokeColorWithColor(ctx, self.color);
     CGContextSetLineWidth(ctx, self.lineWidth);
     CGContextMoveToPoint(ctx, pointA.x, pointA.y);
     CGContextAddLineToPoint(ctx, pointB.x, pointB.y);

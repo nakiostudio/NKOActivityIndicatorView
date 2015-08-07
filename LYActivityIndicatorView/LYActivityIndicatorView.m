@@ -28,13 +28,6 @@ CGFloat const kDefaultLineWidth = 10.f;
     return self;
 }
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    
-    self.lineWidth = kDefaultLineWidth;
-    self.color = [UIColor blackColor];
-}
-
 - (void)layoutSubviews {
     [super layoutSubviews];
     
@@ -42,10 +35,25 @@ CGFloat const kDefaultLineWidth = 10.f;
     self.animatedLayer.frame = self.bounds;
 }
 
+- (void)prepareForInterfaceBuilder {
+    self.containerLayer.frame = self.bounds;
+    self.animatedLayer.step = 0.625f;
+}
+
 - (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
     
     self.animatedLayer.frame = CGRectMake(0.f, 0.f, CGRectGetWidth(frame), CGRectGetHeight(frame));
+}
+
+- (void)setColor:(UIColor *)color {
+    self->_color = color;
+    self.animatedLayer.color = color.CGColor;
+}
+
+- (void)setLineWidth:(CGFloat)lineWidth {
+    self->_lineWidth = lineWidth;
+    self.animatedLayer.lineWidth = lineWidth;
 }
 
 #pragma mark - Public methods

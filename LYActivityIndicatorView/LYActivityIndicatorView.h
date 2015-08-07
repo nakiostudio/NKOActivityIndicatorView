@@ -5,10 +5,11 @@
 
 #import <UIKit/UIKit.h>
 
+IB_DESIGNABLE
 @interface LYActivityIndicatorView : UIView
 
-@property (nonatomic, strong) UIColor *color;
-@property (nonatomic, assign) CGFloat lineWidth;
+@property (nonatomic, strong) IBInspectable UIColor *color;
+@property (nonatomic, assign) IBInspectable CGFloat lineWidth;
 
 - (void)startAnimating;
 - (void)stopAnimating;
