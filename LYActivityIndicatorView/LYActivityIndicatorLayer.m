@@ -55,7 +55,9 @@ CGFloat const kSegmentLapse     = 0.125f;
     static NSUInteger segments = 8;
     
     for (int segment = 0; segment <= segments; segment++) {
-        if (step >= kSegmentLapse*segment) {
+        if (segment < segments*0.5f && step/kSegmentLapse >= segments*0.5f) continue;
+        
+        if (step >= kSegmentLapse*segment || step > 0.5f) {
             CGPoint pointA = [self _pointAforSegment:segment step:step];
             CGPoint pointB = [self _pointBforSegment:segment step:step];
             [self _drawLineInContext:ctx from:pointA to:pointB];
@@ -65,23 +67,28 @@ CGFloat const kSegmentLapse     = 0.125f;
 }
 
 - (CGPoint)_pointAforSegment:(NSUInteger)segment step:(CGFloat)step {
+    CGFloat pos = step < (kSegmentLapse*(segment+1)) ? (step - kSegmentLapse*(segment))/kSegmentLapse : 1.f;
+    
+    CGFloat width = CGRectGetWidth(self.bounds);
+    CGFloat height = CGRectGetWidth(self.bounds);
+    
     switch (segment) {
         case 0:
             return CGPointMake(0.f, 0.f);
         case 1:
-            return CGPointMake(CGRectGetWidth(self.bounds), 0.f);
+            return CGPointMake(width, 0.f);
         case 2:
-            return CGPointMake(CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds));
+            return CGPointMake(width, height);
         case 3:
-            return CGPointMake(0.f, CGRectGetHeight(self.bounds));
+            return CGPointMake(0.f, height);
         case 4:
-            return CGPointZero;
+            return CGPointMake(width*pos, 0.f);
         case 5:
-            return CGPointZero;
+            return CGPointMake(width, height*pos);
         case 6:
-            return CGPointZero;
+            return CGPointMake(width-(width*pos), height);
         case 7:
-            return CGPointZero;
+            return CGPointMake(0.f, height-(height*pos));
         default:
             return CGPointZero;
     }
@@ -102,13 +109,13 @@ CGFloat const kSegmentLapse     = 0.125f;
         case 3:
             return CGPointMake(0.f, height-(height*pos));
         case 4:
-            return CGPointZero;
+            return CGPointMake(width, 0.f);
         case 5:
-            return CGPointZero;
+            return CGPointMake(width, height);
         case 6:
-            return CGPointZero;
+            return CGPointMake(0.f, height);
         case 7:
-            return CGPointZero;
+            return CGPointMake(0.f, 0.f);
         default:
             return CGPointZero;
     }
