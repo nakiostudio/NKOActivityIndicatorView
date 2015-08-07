@@ -14,6 +14,7 @@
 		C161DDA81B73FC9B00693645 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C161DDA71B73FC9B00693645 /* Images.xcassets */; };
 		C161DDAB1B73FC9B00693645 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C161DDA91B73FC9B00693645 /* LaunchScreen.xib */; };
 		C161DDB71B73FC9B00693645 /* LYActivityIndicatorViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDB61B73FC9B00693645 /* LYActivityIndicatorViewTests.m */; };
+		C161DDC21B73FCC000693645 /* LYActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDC11B73FCC000693645 /* LYActivityIndicatorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		C161DDB01B73FC9B00693645 /* LYActivityIndicatorViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYActivityIndicatorViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C161DDB51B73FC9B00693645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C161DDB61B73FC9B00693645 /* LYActivityIndicatorViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYActivityIndicatorViewTests.m; sourceTree = "<group>"; };
+		C161DDC01B73FCC000693645 /* LYActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYActivityIndicatorView.h; sourceTree = "<group>"; };
+		C161DDC11B73FCC000693645 /* LYActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYActivityIndicatorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		C161DD991B73FC9B00693645 /* LYActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
+				C161DDC01B73FCC000693645 /* LYActivityIndicatorView.h */,
+				C161DDC11B73FCC000693645 /* LYActivityIndicatorView.m */,
 				C161DD9E1B73FC9B00693645 /* AppDelegate.h */,
 				C161DD9F1B73FC9B00693645 /* AppDelegate.m */,
 				C161DDA11B73FC9B00693645 /* ViewController.h */,
@@ -221,6 +226,7 @@
 			files = (
 				C161DDA31B73FC9B00693645 /* ViewController.m in Sources */,
 				C161DDA01B73FC9B00693645 /* AppDelegate.m in Sources */,
+				C161DDC21B73FCC000693645 /* LYActivityIndicatorView.m in Sources */,
 				C161DD9D1B73FC9B00693645 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
