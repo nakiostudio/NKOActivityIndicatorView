@@ -11,5 +11,6 @@
 @property (nonatomic, assign) CGFloat lineWidth;
 
 - (void)startAnimating;
+- (void)stopAnimating;
 
 @end

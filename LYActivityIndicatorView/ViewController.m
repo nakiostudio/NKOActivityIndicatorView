@@ -23,4 +23,8 @@
     [self.activityIndicatorView startAnimating];
 }
 
+- (IBAction)_action:(id)sender {
+    [self.activityIndicatorView stopAnimating];
+}
+
 @end

@@ -184,6 +184,8 @@ CGFloat const kDefaultLineWidth = 10.f;
 }
 
 - (void)startAnimating {
+    [self stopAnimating];
+    
     [CATransaction begin];
     [CATransaction setDisableActions:YES];
     
@@ -199,6 +201,12 @@ CGFloat const kDefaultLineWidth = 10.f;
     [self.animatedLayer addAnimation:animation forKey:@"step"];
     
     [CATransaction commit];
+}
+
+- (void)stopAnimating {
+    for (CALayer *sublayer in self.containerLayer.sublayers) {
+        [sublayer removeAllAnimations];
+    }
 }
 
 #pragma mark - Lazy loading
