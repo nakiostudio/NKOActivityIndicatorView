@@ -10,6 +10,7 @@ IB_DESIGNABLE
 
 @property (nonatomic, strong) IBInspectable UIColor *color;
 @property (nonatomic, assign) IBInspectable CGFloat lineWidth;
+@property (nonatomic, assign, readonly) BOOL isAnimating;
 
 - (void)startAnimating;
 - (void)stopAnimating;

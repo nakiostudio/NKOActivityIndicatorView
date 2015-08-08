@@ -6,7 +6,8 @@
 #import "LYActivityIndicatorView.h"
 #import "LYActivityIndicatorLayer.h"
 
-CGFloat const kDefaultLineWidth = 10.f;
+CGFloat const kDefaultLineWidth     = 10.f;
+NSString *const kAnimationKey       = @"step";
 
 @interface LYActivityIndicatorView ()
 
@@ -64,7 +65,7 @@ CGFloat const kDefaultLineWidth = 10.f;
     [CATransaction begin];
     [CATransaction setDisableActions:YES];
     
-    CABasicAnimation *animation = (CABasicAnimation *)[self.animatedLayer actionForKey:@"step"];
+    CABasicAnimation *animation = (CABasicAnimation *)[self.animatedLayer actionForKey:kAnimationKey];
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     animation.duration      = 3.f;
     animation.fromValue     = @0.f;
@@ -73,7 +74,7 @@ CGFloat const kDefaultLineWidth = 10.f;
     animation.repeatCount   = CGFLOAT_MAX;
     
     self.animatedLayer.step = ((NSNumber*)animation.toValue).floatValue;
-    [self.animatedLayer addAnimation:animation forKey:@"step"];
+    [self.animatedLayer addAnimation:animation forKey:kAnimationKey];
     
     [CATransaction commit];
 }
@@ -82,6 +83,15 @@ CGFloat const kDefaultLineWidth = 10.f;
     for (CALayer *sublayer in self.containerLayer.sublayers) {
         [sublayer removeAllAnimations];
     }
+}
+
+- (BOOL)isAnimating {
+    for (CALayer *layer in self.containerLayer.sublayers) {
+        if ([layer animationForKey:kAnimationKey] != nil)
+            return YES;
+    }
+    
+    return NO;
 }
 
 #pragma mark - Lazy loading
