@@ -6,7 +6,7 @@
 #import "LYActivityIndicatorView.h"
 #import "LYActivityIndicatorLayer.h"
 
-CGFloat const kAnimationDuration    = 3.f;
+CGFloat const kAnimationDuration    = 2.f;
 CGFloat const kDefaultLineWidth     = 10.f;
 NSString *const kAnimationKey       = @"step";
 
@@ -61,7 +61,9 @@ NSString *const kAnimationKey       = @"step";
 #pragma mark - Public methods
 
 - (void)startAnimating {
-    [self stopAnimating];
+    if (self.isAnimating == YES) {
+        return;
+    }
     
     [CATransaction begin];
     [CATransaction setDisableActions:YES];

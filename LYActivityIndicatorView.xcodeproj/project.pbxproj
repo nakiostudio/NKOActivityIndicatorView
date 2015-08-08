@@ -85,15 +85,11 @@
 		C161DD991B73FC9B00693645 /* LYActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
+				C1666D301B76520E0093B6E7 /* Example */,
 				C161DDC31B7561F100693645 /* LYActivityIndicatorLayer.h */,
 				C161DDC41B7561F100693645 /* LYActivityIndicatorLayer.m */,
 				C161DDC01B73FCC000693645 /* LYActivityIndicatorView.h */,
 				C161DDC11B73FCC000693645 /* LYActivityIndicatorView.m */,
-				C161DD9E1B73FC9B00693645 /* LYAppDelegate.h */,
-				C161DD9F1B73FC9B00693645 /* LYAppDelegate.m */,
-				C161DDA11B73FC9B00693645 /* LYExampleController.h */,
-				C161DDA21B73FC9B00693645 /* LYExampleController.m */,
-				C161DDA41B73FC9B00693645 /* LYStoryboard.storyboard */,
 				C161DDA71B73FC9B00693645 /* Images.xcassets */,
 				C161DD9A1B73FC9B00693645 /* Supporting Files */,
 			);
@@ -124,6 +120,18 @@
 				C161DDB51B73FC9B00693645 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1666D301B76520E0093B6E7 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				C161DD9E1B73FC9B00693645 /* LYAppDelegate.h */,
+				C161DD9F1B73FC9B00693645 /* LYAppDelegate.m */,
+				C161DDA11B73FC9B00693645 /* LYExampleController.h */,
+				C161DDA21B73FC9B00693645 /* LYExampleController.m */,
+				C161DDA41B73FC9B00693645 /* LYStoryboard.storyboard */,
+			);
+			name = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

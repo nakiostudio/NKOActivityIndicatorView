@@ -16,47 +16,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fkS-31-eHR" customClass="LYActivityIndicatorView">
-                                <rect key="frame" x="282.5" y="282.5" width="35" height="35"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2sD-da-ene">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxp-3Z-Ids">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fkS-31-eHR" customClass="LYActivityIndicatorView">
+                                        <rect key="frame" x="289" y="290" width="21" height="21"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="JM4-cc-mAs"/>
+                                            <constraint firstAttribute="width" constant="21" id="aXO-Fs-svF"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.83999999999999997" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="L0f-nN-Ii5"/>
-                                    <constraint firstAttribute="height" constant="35" id="hEH-5O-dWb"/>
+                                    <constraint firstAttribute="centerX" secondItem="fkS-31-eHR" secondAttribute="centerX" id="55U-GT-3VU"/>
+                                    <constraint firstAttribute="centerY" secondItem="fkS-31-eHR" secondAttribute="centerY" id="u65-LS-ily"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" alpha="0.59999999999999964" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adl-Zv-i9F">
-                                <rect key="frame" x="246" y="526" width="109" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="BJ6-cm-INe"/>
-                                    <constraint firstAttribute="width" constant="109" id="Gp7-5F-9Il"/>
-                                </constraints>
-                                <state key="normal" title="Stop">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="_action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ody-44-4WC"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="adl-Zv-i9F" secondAttribute="centerX" id="3cB-Gq-A8e"/>
-                            <constraint firstAttribute="centerY" secondItem="fkS-31-eHR" secondAttribute="centerY" id="EIX-oP-C5B"/>
-                            <constraint firstAttribute="centerX" secondItem="fkS-31-eHR" secondAttribute="centerX" id="hjx-er-FJm"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="adl-Zv-i9F" secondAttribute="bottom" constant="44" id="zJN-vt-s7F"/>
+                            <constraint firstItem="dxp-3Z-Ids" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8DM-ml-B5Q"/>
+                            <constraint firstAttribute="trailing" secondItem="dxp-3Z-Ids" secondAttribute="trailing" id="JhZ-Ww-38U"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dxp-3Z-Ids" secondAttribute="bottom" id="UVT-e7-s6n"/>
+                            <constraint firstItem="2sD-da-ene" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VhV-Xm-aQi"/>
+                            <constraint firstItem="dxp-3Z-Ids" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gaI-TT-aRJ"/>
+                            <constraint firstItem="2sD-da-ene" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iLr-rw-8YA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2sD-da-ene" secondAttribute="bottom" id="ud2-fJ-KMO"/>
+                            <constraint firstAttribute="trailing" secondItem="2sD-da-ene" secondAttribute="trailing" id="xsQ-ei-gPx"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="activityIndicatorView" destination="fkS-31-eHR" id="AAx-Pv-9id"/>
+                        <outlet property="alertContainerView" destination="dxp-3Z-Ids" id="GPy-3M-q6m"/>
+                        <outlet property="webView" destination="2sD-da-ene" id="z8S-Bw-WvK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
