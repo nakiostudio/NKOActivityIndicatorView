@@ -23,8 +23,15 @@
     [self.activityIndicatorView startAnimating];
 }
 
-- (IBAction)_action:(id)sender {
-    [self.activityIndicatorView stopAnimating];
+- (IBAction)_action:(UIButton*)sender {
+    if (self.activityIndicatorView.isAnimating) {
+        [self.activityIndicatorView stopAnimating];
+        [sender setTitle:@"Animate" forState:UIControlStateNormal];
+    }
+    else {
+        [self.activityIndicatorView startAnimating];
+        [sender setTitle:@"Stop" forState:UIControlStateNormal];
+    }
 }
 
 @end

@@ -6,6 +6,7 @@
 #import "LYActivityIndicatorView.h"
 #import "LYActivityIndicatorLayer.h"
 
+CGFloat const kAnimationDuration    = 3.f;
 CGFloat const kDefaultLineWidth     = 10.f;
 NSString *const kAnimationKey       = @"step";
 
@@ -67,7 +68,7 @@ NSString *const kAnimationKey       = @"step";
     
     CABasicAnimation *animation = (CABasicAnimation *)[self.animatedLayer actionForKey:kAnimationKey];
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
-    animation.duration      = 3.f;
+    animation.duration      = kAnimationDuration;
     animation.fromValue     = @0.f;
     animation.toValue       = @1.f;
     animation.byValue       = @0.1f;
