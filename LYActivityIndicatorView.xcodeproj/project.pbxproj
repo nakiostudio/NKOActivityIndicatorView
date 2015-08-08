@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C161DD9D1B73FC9B00693645 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DD9C1B73FC9B00693645 /* main.m */; };
-		C161DDA01B73FC9B00693645 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DD9F1B73FC9B00693645 /* AppDelegate.m */; };
-		C161DDA31B73FC9B00693645 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDA21B73FC9B00693645 /* ViewController.m */; };
-		C161DDA61B73FC9B00693645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C161DDA41B73FC9B00693645 /* Main.storyboard */; };
+		C161DDA01B73FC9B00693645 /* LYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DD9F1B73FC9B00693645 /* LYAppDelegate.m */; };
+		C161DDA31B73FC9B00693645 /* LYExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDA21B73FC9B00693645 /* LYExampleController.m */; };
+		C161DDA61B73FC9B00693645 /* LYStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C161DDA41B73FC9B00693645 /* LYStoryboard.storyboard */; };
 		C161DDA81B73FC9B00693645 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C161DDA71B73FC9B00693645 /* Images.xcassets */; };
-		C161DDAB1B73FC9B00693645 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C161DDA91B73FC9B00693645 /* LaunchScreen.xib */; };
 		C161DDB71B73FC9B00693645 /* LYActivityIndicatorViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDB61B73FC9B00693645 /* LYActivityIndicatorViewTests.m */; };
 		C161DDC21B73FCC000693645 /* LYActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDC11B73FCC000693645 /* LYActivityIndicatorView.m */; };
 		C161DDC51B7561F100693645 /* LYActivityIndicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDC41B7561F100693645 /* LYActivityIndicatorLayer.m */; };
@@ -32,13 +31,12 @@
 		C161DD971B73FC9B00693645 /* LYActivityIndicatorView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYActivityIndicatorView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C161DD9B1B73FC9B00693645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C161DD9C1B73FC9B00693645 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C161DD9E1B73FC9B00693645 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C161DD9F1B73FC9B00693645 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C161DDA11B73FC9B00693645 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C161DDA21B73FC9B00693645 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C161DDA51B73FC9B00693645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C161DD9E1B73FC9B00693645 /* LYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYAppDelegate.h; sourceTree = "<group>"; };
+		C161DD9F1B73FC9B00693645 /* LYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYAppDelegate.m; sourceTree = "<group>"; };
+		C161DDA11B73FC9B00693645 /* LYExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYExampleController.h; sourceTree = "<group>"; };
+		C161DDA21B73FC9B00693645 /* LYExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYExampleController.m; sourceTree = "<group>"; };
+		C161DDA51B73FC9B00693645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LYStoryboard.storyboard; sourceTree = "<group>"; };
 		C161DDA71B73FC9B00693645 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C161DDAA1B73FC9B00693645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C161DDB01B73FC9B00693645 /* LYActivityIndicatorViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYActivityIndicatorViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C161DDB51B73FC9B00693645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C161DDB61B73FC9B00693645 /* LYActivityIndicatorViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYActivityIndicatorViewTests.m; sourceTree = "<group>"; };
@@ -91,13 +89,12 @@
 				C161DDC41B7561F100693645 /* LYActivityIndicatorLayer.m */,
 				C161DDC01B73FCC000693645 /* LYActivityIndicatorView.h */,
 				C161DDC11B73FCC000693645 /* LYActivityIndicatorView.m */,
-				C161DD9E1B73FC9B00693645 /* AppDelegate.h */,
-				C161DD9F1B73FC9B00693645 /* AppDelegate.m */,
-				C161DDA11B73FC9B00693645 /* ViewController.h */,
-				C161DDA21B73FC9B00693645 /* ViewController.m */,
-				C161DDA41B73FC9B00693645 /* Main.storyboard */,
+				C161DD9E1B73FC9B00693645 /* LYAppDelegate.h */,
+				C161DD9F1B73FC9B00693645 /* LYAppDelegate.m */,
+				C161DDA11B73FC9B00693645 /* LYExampleController.h */,
+				C161DDA21B73FC9B00693645 /* LYExampleController.m */,
+				C161DDA41B73FC9B00693645 /* LYStoryboard.storyboard */,
 				C161DDA71B73FC9B00693645 /* Images.xcassets */,
-				C161DDA91B73FC9B00693645 /* LaunchScreen.xib */,
 				C161DD9A1B73FC9B00693645 /* Supporting Files */,
 			);
 			path = LYActivityIndicatorView;
@@ -209,8 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C161DDA61B73FC9B00693645 /* Main.storyboard in Resources */,
-				C161DDAB1B73FC9B00693645 /* LaunchScreen.xib in Resources */,
+				C161DDA61B73FC9B00693645 /* LYStoryboard.storyboard in Resources */,
 				C161DDA81B73FC9B00693645 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,8 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C161DDA31B73FC9B00693645 /* ViewController.m in Sources */,
-				C161DDA01B73FC9B00693645 /* AppDelegate.m in Sources */,
+				C161DDA31B73FC9B00693645 /* LYExampleController.m in Sources */,
+				C161DDA01B73FC9B00693645 /* LYAppDelegate.m in Sources */,
 				C161DDC21B73FCC000693645 /* LYActivityIndicatorView.m in Sources */,
 				C161DDC51B7561F100693645 /* LYActivityIndicatorLayer.m in Sources */,
 				C161DD9D1B73FC9B00693645 /* main.m in Sources */,
@@ -256,20 +252,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C161DDA41B73FC9B00693645 /* Main.storyboard */ = {
+		C161DDA41B73FC9B00693645 /* LYStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C161DDA51B73FC9B00693645 /* Base */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C161DDA91B73FC9B00693645 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C161DDAA1B73FC9B00693645 /* Base */,
-			);
-			name = LaunchScreen.xib;
+			name = LYStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -430,6 +418,7 @@
 				C161DDBC1B73FC9B00693645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C161DDBD1B73FC9B00693645 /* Build configuration list for PBXNativeTarget "LYActivityIndicatorViewTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +427,7 @@
 				C161DDBF1B73FC9B00693645 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

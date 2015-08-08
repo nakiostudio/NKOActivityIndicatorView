@@ -6,16 +6,16 @@
 //  Copyright (c) 2015 Carlos Vidal Pallin. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LYExampleController.h"
 #import "LYActivityIndicatorView.h"
 
-@interface ViewController ()
+@interface LYExampleController ()
 
 @property (weak, nonatomic) IBOutlet LYActivityIndicatorView *activityIndicatorView;
 
 @end
 
-@implementation ViewController
+@implementation LYExampleController
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];

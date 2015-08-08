@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>981ED3C5-DE65-4D2F-AB1A-F0F99119C3D2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LYActivityIndicatorView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8AC6C62519D53F80C2D682C932CE48EC5267621A</key>
+		<string>gitlab.com:nakio/LY-ActivityIndicatorView-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LYActivityIndicatorView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8AC6C62519D53F80C2D682C932CE48EC5267621A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>gitlab.com:nakio/LY-ActivityIndicatorView-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8AC6C62519D53F80C2D682C932CE48EC5267621A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8AC6C62519D53F80C2D682C932CE48EC5267621A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LYActivityIndicatorView</string>
+		</dict>
+	</array>
+</dict>
+</plist>

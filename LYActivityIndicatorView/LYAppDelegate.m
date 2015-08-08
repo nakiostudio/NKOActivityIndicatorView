@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Carlos Vidal Pallin. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "LYAppDelegate.h"
 
-@interface AppDelegate ()
+@interface LYAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation LYAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
