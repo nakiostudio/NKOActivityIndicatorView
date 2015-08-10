@@ -40,10 +40,10 @@
 		C161DDB01B73FC9B00693645 /* LYActivityIndicatorViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYActivityIndicatorViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C161DDB51B73FC9B00693645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C161DDB61B73FC9B00693645 /* LYActivityIndicatorViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYActivityIndicatorViewTests.m; sourceTree = "<group>"; };
-		C161DDC01B73FCC000693645 /* LYActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYActivityIndicatorView.h; sourceTree = "<group>"; };
-		C161DDC11B73FCC000693645 /* LYActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYActivityIndicatorView.m; sourceTree = "<group>"; };
-		C161DDC31B7561F100693645 /* LYActivityIndicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYActivityIndicatorLayer.h; sourceTree = "<group>"; };
-		C161DDC41B7561F100693645 /* LYActivityIndicatorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYActivityIndicatorLayer.m; sourceTree = "<group>"; };
+		C161DDC01B73FCC000693645 /* LYActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYActivityIndicatorView.h; path = Classes/LYActivityIndicatorView.h; sourceTree = "<group>"; };
+		C161DDC11B73FCC000693645 /* LYActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYActivityIndicatorView.m; path = Classes/LYActivityIndicatorView.m; sourceTree = "<group>"; };
+		C161DDC31B7561F100693645 /* LYActivityIndicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYActivityIndicatorLayer.h; path = Classes/LYActivityIndicatorLayer.h; sourceTree = "<group>"; };
+		C161DDC41B7561F100693645 /* LYActivityIndicatorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYActivityIndicatorLayer.m; path = Classes/LYActivityIndicatorLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 				C161DDA21B73FC9B00693645 /* LYExampleController.m */,
 				C161DDA41B73FC9B00693645 /* LYStoryboard.storyboard */,
 			);
-			name = Example;
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +266,7 @@
 				C161DDA51B73FC9B00693645 /* Base */,
 			);
 			name = LYStoryboard.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
