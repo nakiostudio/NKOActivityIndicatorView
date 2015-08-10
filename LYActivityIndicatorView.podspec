@@ -1,4 +1,4 @@
-iPod::Spec.new do |s|
+Pod::Spec.new do |s|
   s.name         = "LYActivityIndicatorView"
   s.version      = "0.1"
   s.summary      = ""
