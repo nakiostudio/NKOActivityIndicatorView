@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C161DD971B73FC9B00693645 /* NKOActivityIndicatorView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NKOActivityIndicatorView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C161DD971B73FC9B00693645 /* NKO AIV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NKO AIV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C161DD9B1B73FC9B00693645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C161DD9C1B73FC9B00693645 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C161DD9E1B73FC9B00693645 /* NKOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKOAppDelegate.h; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		C161DD981B73FC9B00693645 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C161DD971B73FC9B00693645 /* NKOActivityIndicatorView.app */,
+				C161DD971B73FC9B00693645 /* NKO AIV.app */,
 				C161DDB01B73FC9B00693645 /* NKOActivityIndicatorViewTests.xctest */,
 			);
 			name = Products;
@@ -151,7 +151,7 @@
 			);
 			name = NKOActivityIndicatorView;
 			productName = LYActivityIndicatorView;
-			productReference = C161DD971B73FC9B00693645 /* NKOActivityIndicatorView.app */;
+			productReference = C161DD971B73FC9B00693645 /* NKO AIV.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C161DDAF1B73FC9B00693645 /* NKOActivityIndicatorViewTests */ = {
@@ -362,7 +362,7 @@
 				INFOPLIST_FILE = NKOActivityIndicatorView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nakiostudio.NKOActivityIndicatorView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "NKO AIV";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -374,7 +374,7 @@
 				INFOPLIST_FILE = NKOActivityIndicatorView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nakiostudio.NKOActivityIndicatorView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "NKO AIV";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -391,7 +391,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = LYActivityIndicatorViewTests/Info.plist;
+				INFOPLIST_FILE = NKOActivityIndicatorViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NKOActivityIndicatorView.app/NKOActivityIndicatorView";
@@ -406,7 +406,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = LYActivityIndicatorViewTests/Info.plist;
+				INFOPLIST_FILE = NKOActivityIndicatorViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NKOActivityIndicatorView.app/NKOActivityIndicatorView";
