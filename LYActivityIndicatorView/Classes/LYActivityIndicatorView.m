@@ -1,6 +1,9 @@
 //
-//  Created by Carlos Vidal on 06/08/2015.
-//  Copyright (c) 2015 Lyst Ltd. All rights reserved.
+//  LYActivityIndicatorLayer.m
+//  LYActivityIndicatorView
+//
+//  Created by Carlos Vidal Pallin on 07/08/2015.
+//  Copyright (c) 2015 Carlos Vidal Pallin. All rights reserved.
 //
 
 #import "LYActivityIndicatorView.h"
