@@ -63,7 +63,6 @@ CGFloat const kSegmentLapse = 0.125f;
             [self _drawLineInContext:ctx from:pointA to:pointB];
         }
     }
-    
 }
 
 - (CGPoint)_pointAforSegment:(NSUInteger)segment step:(CGFloat)step {

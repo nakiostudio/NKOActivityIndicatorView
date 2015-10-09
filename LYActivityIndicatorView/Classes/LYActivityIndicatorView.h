@@ -8,10 +8,15 @@
 IB_DESIGNABLE
 @interface LYActivityIndicatorView : UIView
 
+@property (nonatomic, strong) IBInspectable UIColor *color;
 @property (nonatomic, assign) IBInspectable CGFloat lineWidth;
-@property (nonatomic, assign, readonly) BOOL isAnimating;
+@property (nonatomic, assign) IBInspectable BOOL hidesWhenStopped;
+
+- (instancetype)initWithFrame:(CGRect)frame;
+- (instancetype)initWithCoder:(NSCoder *)coder;
 
 - (void)startAnimating;
 - (void)stopAnimating;
+- (BOOL)isAnimating;
 
 @end
