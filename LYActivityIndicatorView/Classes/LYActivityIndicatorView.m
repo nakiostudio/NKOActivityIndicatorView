@@ -73,8 +73,9 @@ NSString *const kAnimationKey       = @"step";
 }
 
 - (void)setLineWidth:(CGFloat)lineWidth {
-    self->_lineWidth = lineWidth;
-    self.animatedLayer.lineWidth = lineWidth;
+    CGFloat adjustedLineWidth = fmax(1.f, fmod(lineWidth, 2.f) != 0 ? lineWidth - 1.f : lineWidth);
+    self->_lineWidth = adjustedLineWidth;
+    self.animatedLayer.lineWidth = adjustedLineWidth;
 }
 
 - (void)setColor:(UIColor *)color {

@@ -50,13 +50,16 @@
                                         </constraints>
                                         <segments>
                                             <segment title="Black"/>
-                                            <segment title="Grey"/>
+                                            <segment title="Gray"/>
                                             <segment title="Blue"/>
                                             <segment title="Red"/>
                                         </segments>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="_changedColorSegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="mxs-RJ-jmC"/>
+                                        </connections>
                                     </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="border width" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6L-PG-JXJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="line width" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6L-PG-JXJ">
                                         <rect key="frame" x="20" y="97" width="102" height="32"/>
                                         <animations/>
                                         <constraints>
@@ -67,7 +70,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="EH0-BV-Mp6">
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" maximumValue="30" stepValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="EH0-BV-Mp6">
                                         <rect key="frame" x="20" y="136" width="94" height="29"/>
                                         <animations/>
                                         <constraints>
@@ -75,6 +78,9 @@
                                             <constraint firstAttribute="width" constant="94" id="unD-gA-zXn"/>
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="_tappedBorderStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="wTj-XF-ucI"/>
+                                        </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bT2-XH-ggK">
                                         <rect key="frame" x="151" y="97" width="42" height="32"/>
@@ -86,10 +92,13 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="4F8-C7-Tni">
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" maximumValue="500" stepValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="4F8-C7-Tni">
                                         <rect key="frame" x="151" y="136" width="94" height="29"/>
                                         <animations/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="_tappedSizeStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="v7R-gv-gtQ"/>
+                                        </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEm-K9-6aC">
                                         <rect key="frame" x="20" y="185" width="119" height="32"/>
@@ -114,6 +123,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="@carlostify"/>
+                                                <connections>
+                                                    <action selector="_tappedFollowMeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="91p-EI-ynB"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="follow me" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLe-tt-eLS">
                                                 <rect key="frame" x="410" y="253" width="86" height="30"/>
@@ -125,14 +137,23 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hTq-Ov-MXP" customClass="LYActivityIndicatorView">
-                                                <rect key="frame" x="286" y="131" width="30" height="30"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTq-Ov-MXP" customClass="LYActivityIndicatorView">
+                                                <rect key="frame" x="285" y="131" width="30" height="30"/>
                                                 <animations/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="d2m-lD-GJ1"/>
                                                     <constraint firstAttribute="width" secondItem="hTq-Ov-MXP" secondAttribute="height" multiplier="1:1" id="xlZ-x5-JIj"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hidesWhenStopped" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <animations/>
@@ -188,6 +209,10 @@
                             <constraint firstAttribute="trailing" secondItem="wEv-Bw-Los" secondAttribute="trailing" id="ypM-Aw-7Ap"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="hTq-Ov-MXP" id="Ac3-jP-Iub"/>
+                        <outlet property="activityIndicatorWidthConstraint" destination="d2m-lD-GJ1" id="1tb-1L-X6V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
