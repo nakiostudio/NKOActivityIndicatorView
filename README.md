@@ -1,5 +1,6 @@
-# NKOActivityIndicatorView
+![](NKOActivityIndicatorView/Images.xcassets/AppIcon.appiconset/Icon-76.png)  
 
+# NKOActivityIndicatorView
 A [Lyst.com](http://www.lyst.com) lookalike activity indicator for iOS.
 
 
