@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface LYActivityIndicatorViewTests : XCTestCase
+@interface NKOActivityIndicatorViewTests : XCTestCase
 
 @end
 
-@implementation LYActivityIndicatorViewTests
+@implementation NKOActivityIndicatorViewTests
 
 - (void)setUp {
     [super setUp];
