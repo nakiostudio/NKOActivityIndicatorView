@@ -1,13 +1,13 @@
 //
-//  ViewController.m
-//  LYActivityIndicatorView
+//  NKOViewController.m
+//  NKOActivityIndicatorView
 //
 //  Created by Carlos Vidal Pallin on 06/08/2015.
 //  Copyright (c) 2015 Carlos Vidal Pallin. All rights reserved.
 //
 
-#import "LYExampleController.h"
-#import "LYActivityIndicatorView.h"
+#import "NKOExampleController.h"
+#import "NKOActivityIndicatorView.h"
 
 typedef NS_ENUM(NSUInteger, LYExampleControllerColor) {
     LYExampleControllerColorBlack = 0,
@@ -16,16 +16,16 @@ typedef NS_ENUM(NSUInteger, LYExampleControllerColor) {
     LYExampleControllerColorRed
 };
 
-@interface LYExampleController ()
+@interface NKOExampleController ()
 
-@property (nonatomic, strong) IBOutlet LYActivityIndicatorView *activityIndicatorView;
+@property (nonatomic, strong) IBOutlet NKOActivityIndicatorView *activityIndicatorView;
 @property (nonatomic, strong) IBOutlet NSLayoutConstraint *activityIndicatorWidthConstraint;
 
 @property (nonatomic, assign) CGFloat indicatorInitialWidth;
 
 @end
 
-@implementation LYExampleController
+@implementation NKOExampleController
 
 #pragma mark - Class life cycle
 

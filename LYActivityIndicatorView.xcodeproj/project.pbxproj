@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C161DD9D1B73FC9B00693645 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DD9C1B73FC9B00693645 /* main.m */; };
-		C161DDA01B73FC9B00693645 /* LYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DD9F1B73FC9B00693645 /* LYAppDelegate.m */; };
-		C161DDA31B73FC9B00693645 /* LYExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDA21B73FC9B00693645 /* LYExampleController.m */; };
-		C161DDA61B73FC9B00693645 /* LYStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C161DDA41B73FC9B00693645 /* LYStoryboard.storyboard */; };
+		C161DDA01B73FC9B00693645 /* NKOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DD9F1B73FC9B00693645 /* NKOAppDelegate.m */; };
+		C161DDA31B73FC9B00693645 /* NKOExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDA21B73FC9B00693645 /* NKOExampleController.m */; };
+		C161DDA61B73FC9B00693645 /* NKOStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C161DDA41B73FC9B00693645 /* NKOStoryboard.storyboard */; };
 		C161DDA81B73FC9B00693645 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C161DDA71B73FC9B00693645 /* Images.xcassets */; };
 		C161DDB71B73FC9B00693645 /* LYActivityIndicatorViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDB61B73FC9B00693645 /* LYActivityIndicatorViewTests.m */; };
-		C161DDC21B73FCC000693645 /* LYActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDC11B73FCC000693645 /* LYActivityIndicatorView.m */; };
-		C161DDC51B7561F100693645 /* LYActivityIndicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDC41B7561F100693645 /* LYActivityIndicatorLayer.m */; };
+		C161DDC21B73FCC000693645 /* NKOActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDC11B73FCC000693645 /* NKOActivityIndicatorView.m */; };
+		C161DDC51B7561F100693645 /* NKOActivityIndicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C161DDC41B7561F100693645 /* NKOActivityIndicatorLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,19 +31,19 @@
 		C161DD971B73FC9B00693645 /* LYActivityIndicatorView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYActivityIndicatorView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C161DD9B1B73FC9B00693645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C161DD9C1B73FC9B00693645 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C161DD9E1B73FC9B00693645 /* LYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYAppDelegate.h; sourceTree = "<group>"; };
-		C161DD9F1B73FC9B00693645 /* LYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYAppDelegate.m; sourceTree = "<group>"; };
-		C161DDA11B73FC9B00693645 /* LYExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYExampleController.h; sourceTree = "<group>"; };
-		C161DDA21B73FC9B00693645 /* LYExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYExampleController.m; sourceTree = "<group>"; };
-		C161DDA51B73FC9B00693645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LYStoryboard.storyboard; sourceTree = "<group>"; };
+		C161DD9E1B73FC9B00693645 /* NKOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKOAppDelegate.h; sourceTree = "<group>"; };
+		C161DD9F1B73FC9B00693645 /* NKOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NKOAppDelegate.m; sourceTree = "<group>"; };
+		C161DDA11B73FC9B00693645 /* NKOExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKOExampleController.h; sourceTree = "<group>"; };
+		C161DDA21B73FC9B00693645 /* NKOExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NKOExampleController.m; sourceTree = "<group>"; };
+		C161DDA51B73FC9B00693645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NKOStoryboard.storyboard; sourceTree = "<group>"; };
 		C161DDA71B73FC9B00693645 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C161DDB01B73FC9B00693645 /* LYActivityIndicatorViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYActivityIndicatorViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C161DDB51B73FC9B00693645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C161DDB61B73FC9B00693645 /* LYActivityIndicatorViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYActivityIndicatorViewTests.m; sourceTree = "<group>"; };
-		C161DDC01B73FCC000693645 /* LYActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYActivityIndicatorView.h; path = Classes/LYActivityIndicatorView.h; sourceTree = "<group>"; };
-		C161DDC11B73FCC000693645 /* LYActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYActivityIndicatorView.m; path = Classes/LYActivityIndicatorView.m; sourceTree = "<group>"; };
-		C161DDC31B7561F100693645 /* LYActivityIndicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LYActivityIndicatorLayer.h; path = Classes/LYActivityIndicatorLayer.h; sourceTree = "<group>"; };
-		C161DDC41B7561F100693645 /* LYActivityIndicatorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LYActivityIndicatorLayer.m; path = Classes/LYActivityIndicatorLayer.m; sourceTree = "<group>"; };
+		C161DDC01B73FCC000693645 /* NKOActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NKOActivityIndicatorView.h; path = Classes/NKOActivityIndicatorView.h; sourceTree = "<group>"; };
+		C161DDC11B73FCC000693645 /* NKOActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NKOActivityIndicatorView.m; path = Classes/NKOActivityIndicatorView.m; sourceTree = "<group>"; };
+		C161DDC31B7561F100693645 /* NKOActivityIndicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NKOActivityIndicatorLayer.h; path = Classes/NKOActivityIndicatorLayer.h; sourceTree = "<group>"; };
+		C161DDC41B7561F100693645 /* NKOActivityIndicatorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NKOActivityIndicatorLayer.m; path = Classes/NKOActivityIndicatorLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				C1666D301B76520E0093B6E7 /* Example */,
-				C161DDC31B7561F100693645 /* LYActivityIndicatorLayer.h */,
-				C161DDC41B7561F100693645 /* LYActivityIndicatorLayer.m */,
-				C161DDC01B73FCC000693645 /* LYActivityIndicatorView.h */,
-				C161DDC11B73FCC000693645 /* LYActivityIndicatorView.m */,
+				C161DDC31B7561F100693645 /* NKOActivityIndicatorLayer.h */,
+				C161DDC41B7561F100693645 /* NKOActivityIndicatorLayer.m */,
+				C161DDC01B73FCC000693645 /* NKOActivityIndicatorView.h */,
+				C161DDC11B73FCC000693645 /* NKOActivityIndicatorView.m */,
 				C161DDA71B73FC9B00693645 /* Images.xcassets */,
 				C161DD9A1B73FC9B00693645 /* Supporting Files */,
 			);
@@ -125,11 +125,11 @@
 		C1666D301B76520E0093B6E7 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				C161DD9E1B73FC9B00693645 /* LYAppDelegate.h */,
-				C161DD9F1B73FC9B00693645 /* LYAppDelegate.m */,
-				C161DDA11B73FC9B00693645 /* LYExampleController.h */,
-				C161DDA21B73FC9B00693645 /* LYExampleController.m */,
-				C161DDA41B73FC9B00693645 /* LYStoryboard.storyboard */,
+				C161DD9E1B73FC9B00693645 /* NKOAppDelegate.h */,
+				C161DD9F1B73FC9B00693645 /* NKOAppDelegate.m */,
+				C161DDA11B73FC9B00693645 /* NKOExampleController.h */,
+				C161DDA21B73FC9B00693645 /* NKOExampleController.m */,
+				C161DDA41B73FC9B00693645 /* NKOStoryboard.storyboard */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C161DDA61B73FC9B00693645 /* LYStoryboard.storyboard in Resources */,
+				C161DDA61B73FC9B00693645 /* NKOStoryboard.storyboard in Resources */,
 				C161DDA81B73FC9B00693645 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,10 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C161DDA31B73FC9B00693645 /* LYExampleController.m in Sources */,
-				C161DDA01B73FC9B00693645 /* LYAppDelegate.m in Sources */,
-				C161DDC21B73FCC000693645 /* LYActivityIndicatorView.m in Sources */,
-				C161DDC51B7561F100693645 /* LYActivityIndicatorLayer.m in Sources */,
+				C161DDA31B73FC9B00693645 /* NKOExampleController.m in Sources */,
+				C161DDA01B73FC9B00693645 /* NKOAppDelegate.m in Sources */,
+				C161DDC21B73FCC000693645 /* NKOActivityIndicatorView.m in Sources */,
+				C161DDC51B7561F100693645 /* NKOActivityIndicatorLayer.m in Sources */,
 				C161DD9D1B73FC9B00693645 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,12 +260,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C161DDA41B73FC9B00693645 /* LYStoryboard.storyboard */ = {
+		C161DDA41B73FC9B00693645 /* NKOStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C161DDA51B73FC9B00693645 /* Base */,
 			);
-			name = LYStoryboard.storyboard;
+			name = NKOStoryboard.storyboard;
 			path = ..;
 			sourceTree = "<group>";
 		};

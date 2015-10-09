@@ -1,26 +1,26 @@
 //
-//  LYActivityIndicatorLayer.m
-//  LYActivityIndicatorView
+//  NKOActivityIndicatorLayer.m
+//  NKOActivityIndicatorView
 //
 //  Created by Carlos Vidal Pallin on 07/08/2015.
 //  Copyright (c) 2015 Carlos Vidal Pallin. All rights reserved.
 //
 
-#import "LYActivityIndicatorView.h"
-#import "LYActivityIndicatorLayer.h"
+#import "NKOActivityIndicatorView.h"
+#import "NKOActivityIndicatorLayer.h"
 
 CGFloat const kAnimationDuration    = 2.f;
 CGFloat const kDefaultLineWidth     = 10.f;
 NSString *const kAnimationKey       = @"step";
 
-@interface LYActivityIndicatorView ()
+@interface NKOActivityIndicatorView ()
 
-@property (nonatomic, strong) LYActivityIndicatorLayer *animatedLayer;
+@property (nonatomic, strong) NKOActivityIndicatorLayer *animatedLayer;
 @property (nonatomic, strong) CALayer *containerLayer;
 
 @end
 
-@implementation LYActivityIndicatorView
+@implementation NKOActivityIndicatorView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -140,7 +140,7 @@ NSString *const kAnimationKey       = @"step";
         self->_containerLayer.backgroundColor = [UIColor clearColor].CGColor;
         
         if (self->_animatedLayer == nil) {
-            self->_animatedLayer = [[LYActivityIndicatorLayer alloc] init];
+            self->_animatedLayer = [[NKOActivityIndicatorLayer alloc] init];
             self->_animatedLayer.color = self.tintColor.CGColor;
             self->_animatedLayer.lineWidth = self.lineWidth;
             self->_animatedLayer.backgroundColor = [UIColor clearColor].CGColor;

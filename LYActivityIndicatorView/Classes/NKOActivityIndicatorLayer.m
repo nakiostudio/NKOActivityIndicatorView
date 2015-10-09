@@ -1,6 +1,6 @@
 //
-//  LYActivityIndicatorLayer.m
-//  LYActivityIndicatorView
+//  NKOActivityIndicatorLayer.m
+//  NKOActivityIndicatorView
 //
 //  Created by Carlos Vidal Pallin on 07/08/2015.
 //  Copyright (c) 2015 Carlos Vidal Pallin. All rights reserved.
@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-#import "LYActivityIndicatorLayer.h"
+#import "NKOActivityIndicatorLayer.h"
 
 CGFloat const kSegmentLapse = 0.125f;
 
-@interface LYActivityIndicatorLayer ()
+@interface NKOActivityIndicatorLayer ()
 
 @end
 
-@implementation LYActivityIndicatorLayer
+@implementation NKOActivityIndicatorLayer
 
 - (instancetype)init {
     self = [super init];
@@ -32,7 +32,7 @@ CGFloat const kSegmentLapse = 0.125f;
     self = [super initWithLayer:layer];
     
     if (self != nil) {
-        LYActivityIndicatorLayer *sourceLayer = layer;
+        NKOActivityIndicatorLayer *sourceLayer = layer;
         self->_color = sourceLayer.color;
         self->_lineWidth = sourceLayer.lineWidth;
         self.backgroundColor = sourceLayer.backgroundColor;

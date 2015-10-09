@@ -1,6 +1,6 @@
 //
-//  LYActivityIndicatorLayer.m
-//  LYActivityIndicatorView
+//  NKOActivityIndicatorLayer.m
+//  NKOActivityIndicatorView
 //
 //  Created by Carlos Vidal Pallin on 07/08/2015.
 //  Copyright (c) 2015 Carlos Vidal Pallin. All rights reserved.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 IB_DESIGNABLE
-@interface LYActivityIndicatorView : UIView
+@interface NKOActivityIndicatorView : UIView
 
 @property (nonatomic, strong) IBInspectable UIColor *color;
 @property (nonatomic, assign) IBInspectable CGFloat lineWidth;
