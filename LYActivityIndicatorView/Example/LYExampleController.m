@@ -51,12 +51,6 @@ typedef NS_ENUM(NSUInteger, LYExampleControllerColor) {
     self.indicatorInitialWidth = self.activityIndicatorWidthConstraint.constant;
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    [self.activityIndicatorView startAnimating];
-}
-
 #pragma mark - Private methods
 
 - (void)_updateActivityIndicatorSizeWithScale:(CGFloat)scale {
