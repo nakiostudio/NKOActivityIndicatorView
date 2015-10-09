@@ -24,7 +24,7 @@ NSString *const kAnimationKey       = @"step";
     
     if (self != nil) {
         self.lineWidth = kDefaultLineWidth;
-        self.color = [UIColor blackColor];
+        self.tintColor = [UIColor blackColor];
     }
     
     return self;
@@ -48,9 +48,10 @@ NSString *const kAnimationKey       = @"step";
     self.animatedLayer.frame = CGRectMake(0.f, 0.f, CGRectGetWidth(frame), CGRectGetHeight(frame));
 }
 
-- (void)setColor:(UIColor *)color {
-    self->_color = color;
-    self.animatedLayer.color = color.CGColor;
+- (void)setTintColor:(UIColor *)tintColor
+{
+    [super setTintColor:tintColor];
+    self.animatedLayer.color = tintColor.CGColor;
 }
 
 - (void)setLineWidth:(CGFloat)lineWidth {
@@ -107,7 +108,7 @@ NSString *const kAnimationKey       = @"step";
         
         if (self->_animatedLayer == nil) {
             self->_animatedLayer = [[LYActivityIndicatorLayer alloc] init];
-            self->_animatedLayer.color = self.color.CGColor;
+            self->_animatedLayer.color = self.tintColor.CGColor;
             self->_animatedLayer.lineWidth = self.lineWidth;
             self->_animatedLayer.backgroundColor = [UIColor clearColor].CGColor;
         }
