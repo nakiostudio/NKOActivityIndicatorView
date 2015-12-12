@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NKOActivityIndicatorView"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "A Lyst.com lookalike activity indicator for iOS"
   s.homepage     = "https://github.com/nakiostudio/NKOActivityIndicatorView-iOS"
   s.license      = {
