@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/nakiostudio/NKOActivityIndicatorView-iOS.git", :tag => s.version }
   s.ios.deployment_target = '7.0'
   s.tvos.deployment_target = '9.0'
-  s.watchos.deployment_target = '2.0'
   s.source_files = 'NKOActivityIndicatorView/Classes/*.{h,m}'
   s.public_header_files = 'NKOActivityIndicatorView/Classes/*.h'
   s.requires_arc = true
