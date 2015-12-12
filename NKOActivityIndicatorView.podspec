@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NKOActivityIndicatorView"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "A Lyst.com lookalike activity indicator for iOS"
   s.homepage     = "https://github.com/nakiostudio/NKOActivityIndicatorView-iOS"
   s.license      = {
@@ -14,7 +14,9 @@ Pod::Spec.new do |s|
 	}
   s.author       = { "Carlos Vidal" => "nakioparkour@gmail.com" }
   s.source       = { :git => "https://github.com/nakiostudio/NKOActivityIndicatorView-iOS.git", :tag => s.version }
-  s.platform     = :ios, '7.0'
+  s.ios.deployment_target = '7.0'
+  s.tvos.deployment_target = '9.0'
+  s.watchos.deployment_target = '2.0'
   s.source_files = 'NKOActivityIndicatorView/Classes/*.{h,m}'
   s.public_header_files = 'NKOActivityIndicatorView/Classes/*.h'
   s.requires_arc = true
