@@ -69,7 +69,7 @@ NSString *const kAnimationKey       = @"step";
 - (void)setTintColor:(UIColor *)tintColor
 {
     [super setTintColor:tintColor];
-    self.animatedLayer.color = tintColor.CGColor;
+    self.animatedLayer.color = tintColor;
 }
 
 - (void)setLineWidth:(CGFloat)lineWidth {
@@ -141,7 +141,7 @@ NSString *const kAnimationKey       = @"step";
         
         if (self->_animatedLayer == nil) {
             self->_animatedLayer = [[NKOActivityIndicatorLayer alloc] init];
-            self->_animatedLayer.color = self.tintColor.CGColor;
+            self->_animatedLayer.color = self.tintColor;
             self->_animatedLayer.lineWidth = self.lineWidth;
             self->_animatedLayer.backgroundColor = [UIColor clearColor].CGColor;
         }
