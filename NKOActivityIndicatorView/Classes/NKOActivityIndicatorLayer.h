@@ -10,9 +10,8 @@
 
 @interface NKOActivityIndicatorLayer : CALayer
 
-@property (nonatomic, assign) CGFloat step;
-
-@property (nonatomic, assign) CGColorRef color;
+@property (nonatomic, strong) UIColor *color;
 @property (nonatomic, assign) CGFloat lineWidth;
+@property (nonatomic, assign) CGFloat step;
 
 @end
