@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C161DD961B73FC9B00693645"
                BuildableName = "NKO AIV.app"
-               BlueprintName = "NKOActivityIndicatorView"
+               BlueprintName = "NKOActivityIndicatorViewDemo"
                ReferencedContainer = "container:NKOActivityIndicatorView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -34,7 +34,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C161DD961B73FC9B00693645"
             BuildableName = "NKO AIV.app"
-            BlueprintName = "NKOActivityIndicatorView"
+            BlueprintName = "NKOActivityIndicatorViewDemo"
             ReferencedContainer = "container:NKOActivityIndicatorView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -57,7 +57,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C161DD961B73FC9B00693645"
             BuildableName = "NKO AIV.app"
-            BlueprintName = "NKOActivityIndicatorView"
+            BlueprintName = "NKOActivityIndicatorViewDemo"
             ReferencedContainer = "container:NKOActivityIndicatorView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -76,7 +76,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C161DD961B73FC9B00693645"
             BuildableName = "NKO AIV.app"
-            BlueprintName = "NKOActivityIndicatorView"
+            BlueprintName = "NKOActivityIndicatorViewDemo"
             ReferencedContainer = "container:NKOActivityIndicatorView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
