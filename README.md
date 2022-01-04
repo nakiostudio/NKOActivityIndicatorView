@@ -6,11 +6,25 @@ A [Lyst.com](http://www.lyst.com) lookalike activity indicator for iOS.
 
 ## Installation
 
+### CocoaPods
+
 The best way to integrate NKOActivityIndicatorView in your project is with CocoaPods. You can find more info about this dependency manager [here](http://cocoapods.org). Just add the following line to your **Podfile**.
 
 ```
 pod 'NKOActivityIndicatorView'
 ```
+
+### Swift Package Manager
+
+Alternatively you can integrate directly in Xcode using Swift Package Manager. You can find more info about this dependency manager [here](https://www.swift.org/package-manager/)
+
+To integrate using Xcode:
+
+File -> Swift Packages -> Add Package Dependency
+
+Enter package URL: https://github.com/nakiostudio/NKOActivityIndicatorView
+
+See [here](https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app) for more info 
 
 ## How does it work
 

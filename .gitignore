@@ -1,3 +1,5 @@
 *.xcuserstate
 LYActivityIndicatorView.xcodeproj/xcuserdata/*
 
+# Swift Package Manager 
+.build
